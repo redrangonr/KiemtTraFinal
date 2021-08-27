@@ -1,19 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import {Player} from "../../model/player";
 import {PlayerService} from "../../service/player.service";
 import {ActivatedRoute} from "@angular/router";
-import {Player} from "../../model/player";
 
 @Component({
-  selector: 'app-delete-player',
-  templateUrl: './delete-player.component.html',
-  styleUrls: ['./delete-player.component.css']
+  selector: 'app-detail-player',
+  templateUrl: './detail-player.component.html',
+  styleUrls: ['./detail-player.component.css']
 })
-export class DeletePlayerComponent implements OnInit {
-players: Player;
-id: string;
-
-  constructor(private playerService: PlayerService,
-              private activeRoute: ActivatedRoute) { }
+export class DetailPlayerComponent implements OnInit {
+  players: Player;
+  id: string;
+  constructor( private playerService: PlayerService,
+               private activeRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.activeRoute.paramMap.subscribe(sucsess => {
@@ -29,7 +28,5 @@ id: string;
       })
     })
   }
-  delete(id: any) {
-    this.playerService.deleteBook(id).subscribe(susess => alert('thanh cong'));
-  }
+
 }

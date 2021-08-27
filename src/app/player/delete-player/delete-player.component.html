@@ -1,1 +1,13 @@
-<p>delete-player works!</p>
+
+<h1>Dan choi</h1>
+<h3>Name</h3>
+<div>{{players.name}}</div>
+<h3>Author</h3>
+<div>{{players.champ}}</div>
+<h3>KDA</h3>
+<div>{{players.kda}}</div>
+<h3>Description</h3>
+<div>{{players.des}}</div>
+<button><a routerLink="/list" (click)="delete(players.id)">Delete</a></button>
+<span><a>     |    </a></span>
+<button><a routerLink="/list">Back</a></button>

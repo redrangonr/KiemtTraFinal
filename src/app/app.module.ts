@@ -9,6 +9,7 @@ import { EditPlayerComponent } from './player/edit-player/edit-player.component'
 import { CreatePlayerComponent } from './player/create-player/create-player.component';
 import {HttpClientModule} from "@angular/common/http";
 import {ReactiveFormsModule} from "@angular/forms";
+import { DetailPlayerComponent } from './player/detail-player/detail-player.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     DeletePlayerComponent,
     ListPlayerComponent,
     EditPlayerComponent,
-    CreatePlayerComponent
+    CreatePlayerComponent,
+    DetailPlayerComponent
   ],
   imports: [
     BrowserModule,
