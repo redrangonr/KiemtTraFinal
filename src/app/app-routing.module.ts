@@ -8,7 +8,10 @@ const routes: Routes = [
     path: '',
     component: ListPlayerComponent
   },
-
+  {
+    path: 'create',
+    component: CreatePlayerComponent
+  }
 ];
 
 @NgModule({
