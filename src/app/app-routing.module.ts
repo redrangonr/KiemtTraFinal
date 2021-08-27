@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {ListPlayerComponent} from "./player/list-player/list-player.component";
 import {CreatePlayerComponent} from "./player/create-player/create-player.component";
+import {EditPlayerComponent} from "./player/edit-player/edit-player.component";
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'create',
     component: CreatePlayerComponent
+  },
+  {
+    path: 'edit/:id',
+    component: EditPlayerComponent
   }
 ];
 

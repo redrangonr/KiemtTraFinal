@@ -1,1 +1,26 @@
-<p>edit-player works!</p>
+<h1>Dan choi</h1>
+<form [formGroup]="playerForm" (ngSubmit)="Submit()">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td><input type="text" formControlName="name" value="{{players.name}}"></td>
+    </tr>
+    <tr>
+      <td>Champ</td>
+      <td><input type="text" formControlName="champ" value="{{players.champ}}"></td>
+    </tr>
+    <tr>
+      <td>KDA</td>
+      <td><input type="text" formControlName="kda" value="{{players.kda}}" ></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><input type="text" formControlName="description" value="{{players.des}}" ></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Edit</button></td>
+    </tr>
+  </table>
+</form>
+
