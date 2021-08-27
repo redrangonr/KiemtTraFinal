@@ -1,0 +1,26 @@
+
+<h1>Tao dan choi</h1>
+<form [formGroup]="playerForm" (ngSubmit)="Create()">
+  <table>
+    <tr>
+      <td>Player</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Champ</td>
+      <td><input type="text" formControlName="champ" ></td>
+    </tr>
+    <tr>
+      <td>KDA</td>
+      <td><input type="text" formControlName="kda" ></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><input type="text" formControlName="description" ></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Create</button></td>
+    </tr>
+  </table>
+</form>

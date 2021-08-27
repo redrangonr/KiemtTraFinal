@@ -1,0 +1,23 @@
+<h1>Danh sách </h1>
+<h2 style="float: right"><a routerLink='/create'>Create</a></h2>
+<h3>co tat ca {{players.length}} dan choi</h3>
+<table class="table">
+  <thead>
+  <tr>
+    <td>STT</td>
+    <td>Player</td>
+    <td>Champ</td>
+    <td>Action</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let book of players; index as i">
+    <td>{{i + 1}}</td>
+    <td><a [routerLink]="['/detail',book.id]">{{book.champ}}</a></td>
+    <td>{{book.name}}</td>
+    <td><a [routerLink]="['/edit',book.id]">Edit</a><a> | </a>
+      <a [routerLink]="['/delete',book.id]">delete</a></td>
+  </tr>
+  </tbody>
+</table>
+
