@@ -36,7 +36,13 @@ export class EditPlayerComponent implements OnInit {
       }, error => {
         console.log(error)
       })
-    })
+    });
+    this.players = {
+      name: '',
+      champ: '',
+      kda: '',
+      des: '',
+    };
   }
 
   Submit() {
